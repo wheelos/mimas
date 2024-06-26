@@ -21,13 +21,14 @@
 
 #include "google/protobuf/util/json_util.h"
 
-#include "proto/error_code.pb.h"
+#include "common_msgs/basic_msgs/error_code.pb.h"
 
 
 namespace mimas {
 namespace util {
 
 using Json = nlohmann::json;
+using StatusPb = apollo::common::StatusPb;
 
 TEST(JsonUtilTest, ProtoToTypedJson) {
   StatusPb status;

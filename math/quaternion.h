@@ -29,8 +29,8 @@
 
 #include "Eigen/Dense"
 #include "Eigen/Geometry"
-#include "modules/common/math/euler_angles_zxy.h"
-#include "modules/common/math/math_utils.h"
+#include "math/euler_angles_zxy.h"
+#include "math/math_utils.h"
 
 #include "common_msgs/basic_msgs/geometry.pb.h"
 

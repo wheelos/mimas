@@ -14,7 +14,7 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/aabox2d.h"
+#include "math/aabox2d.h"
 
 #include <algorithm>
 #include <cmath>
@@ -22,7 +22,7 @@
 #include "absl/strings/str_cat.h"
 #include "cyber/common/log.h"
 
-#include "modules/common/math/math_utils.h"
+#include "math/math_utils.h"
 
 namespace apollo {
 namespace common {

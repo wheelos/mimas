@@ -14,7 +14,7 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/mpc_osqp.h"
+#include "math/mpc_osqp.h"
 
 #include <chrono>
 #include <ctime>

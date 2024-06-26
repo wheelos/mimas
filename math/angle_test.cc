@@ -14,12 +14,12 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/angle.h"
+#include "math/angle.h"
 
 #include <cmath>
 
 #include "gtest/gtest.h"
-#include "modules/common/math/sin_table.h"
+#include "math/sin_table.h"
 
 namespace apollo {
 namespace common {

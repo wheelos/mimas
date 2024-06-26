@@ -7,13 +7,13 @@ cc_library(
     srcs = ["util.cc"],
     hdrs = ["util.h"],
     deps = [
-        "@core//cyber/common:log",
-        "@core//cyber/common:types",
+        "@wheel_core//cyber/common:log",
+        "@wheel_core//cyber/common:types",
         "//math",
         "//math:geometry",
-        "@common_msgs//basic_msgs:geometry_cc_proto",
-        "@common_msgs//basic_msgs:pnc_point_cc_proto",
-        "@com_github_gflags_gflags",
+        "@wheel_common_msgs//common_msgs/basic_msgs:geometry_cc_proto",
+        "@wheel_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
+        "@com_github_gflags_gflags//:gflags",
     ],
 )
 
@@ -33,7 +33,7 @@ cc_library(
     hdrs = ["point_factory.h"],
     deps = [
         "//math:geometry",
-        "@common_msgs//basic_msgs:pnc_point_cc_proto",
+        "@wheel_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
     ],
 )
 
@@ -72,8 +72,8 @@ cc_library(
     name = "message_util",
     hdrs = ["message_util.h"],
     deps = [
-        "@core//cyber/common:file",
-        "@core//cyber/time:clock",
+        "@wheel_core//cyber/common:file",
+        "@wheel_core//cyber/time:clock",
         "@com_google_absl//absl/strings",
         "@com_google_protobuf//:protobuf",
     ],
@@ -107,7 +107,7 @@ cc_library(
     name = "time_util",
     hdrs = ["time_util.h"],
     deps = [
-        "@core//cyber/common:macros",
+        "@wheel_core//cyber/common",
     ],
 )
 
@@ -133,7 +133,7 @@ cc_library(
     name = "factory",
     hdrs = ["factory.h"],
     deps = [
-        "@core//cyber/common",
+        "@wheel_core//cyber/common",
     ],
 )
 
@@ -161,7 +161,7 @@ cc_library(
     name = "points_downsampler",
     hdrs = ["points_downsampler.h"],
     deps = [
-        "@core//cyber/common",
+        "@wheel_core//cyber/common",
         "//math:geometry",
     ],
 )
@@ -181,7 +181,7 @@ cc_library(
     srcs = ["json_util.cc"],
     hdrs = ["json_util.h"],
     deps = [
-        "@core//cyber/common",
+        "@wheel_core//cyber/common",
         "@com_github_nlohmann_json//:json",
         "@com_google_protobuf//:protobuf",
     ],
@@ -193,7 +193,7 @@ cc_test(
     srcs = ["json_util_test.cc"],
     deps = [
         ":json_util",
-        "@common_msgs//basic_msgs:error_code_cc_proto",
+        "@wheel_common_msgs//common_msgs/basic_msgs:error_code_cc_proto",
         "@com_google_googletest//:gtest_main",
     ],
 )
@@ -209,9 +209,9 @@ cc_library(
     srcs = ["perf_util.cc"],
     hdrs = ["perf_util.h"],
     deps = [
-        "@core//cyber/common:log",
-        "@core//cyber/common:macros",
-        "@core//cyber/time",
+        "@wheel_core//cyber/common:log",
+        "@wheel_core//cyber/common:macros",
+        "@wheel_core//cyber/time",
         "@com_google_absl//absl/strings",
     ],
 )

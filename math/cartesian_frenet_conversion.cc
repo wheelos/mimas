@@ -14,12 +14,12 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/cartesian_frenet_conversion.h"
+#include "math/cartesian_frenet_conversion.h"
 
 #include <cmath>
 
 #include "cyber/common/log.h"
-#include "modules/common/math/math_utils.h"
+#include "math/math_utils.h"
 
 namespace apollo {
 namespace common {

@@ -14,7 +14,7 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/box2d.h"
+#include "math/box2d.h"
 
 #include <algorithm>
 #include <cmath>
@@ -23,8 +23,8 @@
 #include "absl/strings/str_cat.h"
 #include "cyber/common/log.h"
 
-#include "modules/common/math/math_utils.h"
-#include "modules/common/math/polygon2d.h"
+#include "math/math_utils.h"
+#include "math/polygon2d.h"
 
 namespace apollo {
 namespace common {

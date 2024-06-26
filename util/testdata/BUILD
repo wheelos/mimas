@@ -15,6 +15,6 @@ proto_library(
     name = "simple_proto",
     srcs = ["simple.proto"],
     deps = [
-        "@common_msgs//basic_msgs:header_proto",
+        "@wheel_common_msgs//common_msgs/basic_msgs:header_proto",
     ],
 )

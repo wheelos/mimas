@@ -28,8 +28,8 @@
 
 #include "cyber/common/log.h"
 
-#include "modules/common/math/aabox2d.h"
-#include "modules/common/math/math_utils.h"
+#include "math/aabox2d.h"
+#include "math/math_utils.h"
 
 /**
  * @namespace apollo::common::math

@@ -19,7 +19,7 @@
 #include "Eigen/Dense"
 
 #include "cyber/common/log.h"
-#include "modules/common/math/linear_quadratic_regulator.h"
+#include "math/linear_quadratic_regulator.h"
 
 namespace apollo {
 namespace common {

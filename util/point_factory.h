@@ -27,6 +27,9 @@ namespace util {
 
 class PointFactory {
  public:
+  using PointENU = apollo::common::PointENU;
+
+ public:
   template <typename XY>
   static inline math::Vec2d ToVec2d(const XY& xy) {
     return math::Vec2d(xy.x(), xy.y());

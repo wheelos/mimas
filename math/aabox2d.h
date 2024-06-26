@@ -24,7 +24,7 @@
 #include <string>
 #include <vector>
 
-#include "modules/common/math/vec2d.h"
+#include "math/vec2d.h"
 
 /**
  * @namespace apollo::common::math

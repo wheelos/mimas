@@ -14,7 +14,7 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/vec2d.h"
+#include "math/vec2d.h"
 
 #include <cmath>
 

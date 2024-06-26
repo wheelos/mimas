@@ -14,7 +14,7 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/cartesian_frenet_conversion.h"
+#include "math/cartesian_frenet_conversion.h"
 
 #include <array>
 #include <cmath>

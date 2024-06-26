@@ -27,7 +27,7 @@
 
 #include "Eigen/Geometry"
 
-#include "modules/common/math/math_utils.h"
+#include "math/math_utils.h"
 
 /**
  * @namespace apollo::common::math

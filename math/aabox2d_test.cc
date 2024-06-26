@@ -14,14 +14,14 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include "modules/common/math/aabox2d.h"
+#include "math/aabox2d.h"
 
 #include <string>
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(AABox2dTest, GetAllCorners) {
@@ -176,5 +176,4 @@ TEST(AABox2dTest, MergeFrom) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

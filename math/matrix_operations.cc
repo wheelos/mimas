@@ -25,7 +25,7 @@
 #include "Eigen/Dense"
 #include "Eigen/SVD"
 
-#include "modules/common/math/matrix_operations.h"
+#include "math/matrix_operations.h"
 
 /**
  * @namespace apollo::common::math

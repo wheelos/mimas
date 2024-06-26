@@ -7,7 +7,7 @@ package mimas.util.test;
 message SimpleMessage {
   optional int32 integer = 1;
   optional string text = 2;
-  optional Header header = 3;
+  optional apollo.common.Header header = 3;
 }
 
 message SimpleRepeatedMessage {

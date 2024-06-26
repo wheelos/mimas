@@ -18,7 +18,7 @@
  * @file
  **/
 
-#include "modules/common/math/path_matcher.h"
+#include "math/path_matcher.h"
 
 #include <algorithm>
 #include <cmath>
@@ -26,7 +26,7 @@
 
 #include "glog/logging.h"
 
-#include "modules/common/math/linear_interpolation.h"
+#include "math/linear_interpolation.h"
 
 namespace apollo {
 namespace common {

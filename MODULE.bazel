@@ -29,5 +29,8 @@ bazel_dep(name = "abseil-cpp", version = "20240116.2", repo_name = "com_google_a
 bazel_dep(name = "gflags", version = "2.2.2", repo_name = "com_github_gflags_gflags")
 bazel_dep(name = "googletest", version = "1.14.0", repo_name = "com_google_googletest")
 bazel_dep(name = "protobuf", version = "27.1", repo_name = "com_google_protobuf")
+bazel_dep(name = "grpc", version = "1.63.1", repo_name = "com_github_grpc_grpc")
+bazel_dep(name = "glog", version = "0.7.1", repo_name = "com_github_google_glog")
+bazel_dep(name = "nlohmann_json", version = "3.11.3", repo_name = "com_github_nlohmann_json")
 bazel_dep(name = "eigen", version = "3.4.0")
 bazel_dep(name = "osqp", version = "0.6.3")
