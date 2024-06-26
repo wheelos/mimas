@@ -35,6 +35,8 @@ namespace mimas {
 namespace math {
 
 using PathPoint = apollo::common::PathPoint;
+using TrajectoryPoint = apollo::common::TrajectoryPoint;
+using SLPoint = apollo::common::SLPoint;
 
 /**
  * @brief Linear interpolation between two points of type T.

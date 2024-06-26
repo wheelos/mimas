@@ -41,6 +41,8 @@
 namespace mimas {
 namespace math {
 
+using Quaternion = apollo::common::Quaternion;
+
 /*
  * @brief Returns heading (in radians) in [-PI, PI), with 0 being East.
  * Note that x/y/z is East/North/Up.

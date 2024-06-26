@@ -133,7 +133,7 @@ std::vector<size_t> DownsampleByDistance(const Points &points,
     return sampled_indices;
   }
 
-  using apollo::common::math::Vec2d;
+using mimas::math::Vec2d;
   Vec2d v_start =
       Vec2d(points[1].x() - points[0].x(), points[1].y() - points[0].y());
   Vec2d v_end =

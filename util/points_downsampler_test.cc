@@ -25,7 +25,7 @@
 namespace mimas {
 namespace util {
 
-using apollo::common::math::Vec2d;
+using mimas::math::Vec2d;
 
 TEST(DownSamplerTest, DownsampleByAngle) {
   std::vector<Vec2d> points;

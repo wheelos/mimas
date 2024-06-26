@@ -105,15 +105,15 @@ class TimerWrapper {
 
 #if defined(ENABLE_PERF)
 #define PERF_FUNCTION()                               \
-  apollo::common::util::TimerWrapper _timer_wrapper_( \
-      apollo::common::util::function_signature(AFUNC))
+  mimas::util::TimerWrapper _timer_wrapper_( \
+      mimas::util::function_signature(AFUNC))
 #define PERF_FUNCTION_WITH_NAME(func_name) \
-  apollo::common::util::TimerWrapper _timer_wrapper_(func_name)
+  mimas::util::TimerWrapper _timer_wrapper_(func_name)
 #define PERF_FUNCTION_WITH_INDICATOR(indicator)       \
-  apollo::common::util::TimerWrapper _timer_wrapper_( \
-      apollo::common::util::function_signature(AFUNC, indicator))
+  mimas::util::TimerWrapper _timer_wrapper_( \
+      mimas::util::function_signature(AFUNC, indicator))
 #define PERF_BLOCK_START()             \
-  apollo::common::util::Timer _timer_; \
+  mimas::util::Timer _timer_; \
   _timer_.Start()
 #define PERF_BLOCK_END(msg) _timer_.End(msg)
 #define PERF_BLOCK_END_WITH_INDICATOR(indicator, msg) \
