@@ -35,8 +35,8 @@
  * @namespace apollo::common::math
  * @brief The math namespace deals with a number of useful mathematical objects.
  */
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 /**
@@ -467,5 +467,4 @@ class AABoxKDTree2d {
 };
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

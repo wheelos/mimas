@@ -19,8 +19,7 @@
  **/
 #include "math/qp_solver/qp_solver.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 QpSolver::QpSolver(const Eigen::MatrixXd& kernel_matrix,
@@ -61,5 +60,4 @@ const Eigen::MatrixXd& QpSolver::affine_inequality_boundary() const {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

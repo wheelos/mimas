@@ -21,7 +21,6 @@
 #include "common_msgs/basic_msgs/geometry.pb.h"
 #include "common_msgs/basic_msgs/pnc_point.pb.h"
 
-
 namespace mimas {
 namespace util {
 

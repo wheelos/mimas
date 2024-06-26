@@ -23,8 +23,7 @@
 
 #include <cstdint>
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 template <uint64_t N>
@@ -38,5 +37,4 @@ struct Factorial<0> {
 };
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

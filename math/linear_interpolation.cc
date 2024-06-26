@@ -21,8 +21,8 @@
 #include "cyber/common/log.h"
 #include "math/math_utils.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 double slerp(const double a0, const double t0, const double a1, const double t1,
@@ -111,5 +111,4 @@ TrajectoryPoint InterpolateUsingLinearApproximation(const TrajectoryPoint &tp0,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

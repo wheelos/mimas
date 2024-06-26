@@ -27,8 +27,7 @@
 
 #include "cyber/common/log.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 class MpcOsqp {
  public:
@@ -98,5 +97,4 @@ class MpcOsqp {
   Eigen::VectorXd upperBound_;
 };
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

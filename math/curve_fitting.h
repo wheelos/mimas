@@ -26,8 +26,8 @@
 
 #include "math/matrix_operations.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 // The coef is in ascending order,
@@ -81,5 +81,4 @@ std::array<double, N + 1> FitPolynomial(
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

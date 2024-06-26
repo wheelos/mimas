@@ -23,11 +23,10 @@
 
 #include "absl/strings/str_cat.h"
 #include "absl/strings/str_join.h"
-
-#include "cyber/common/log.h"
 #include "math/math_utils.h"
 #include "util/string_util.h"
 
+#include "cyber/common/log.h"
 
 namespace mimas {
 namespace math {
@@ -616,5 +615,4 @@ std::string Polygon2d::DebugString() const {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

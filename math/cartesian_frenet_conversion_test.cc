@@ -21,8 +21,8 @@
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(TestCartesianFrenetConversion, cartesian_to_frenet_test) {
@@ -66,5 +66,4 @@ TEST(TestCartesianFrenetConversion, cartesian_to_frenet_test) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

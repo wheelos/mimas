@@ -22,8 +22,8 @@
 
 #include "cyber/common/log.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 Vec2d Vec2d::CreateUnitVec2d(const double angle) {
@@ -127,5 +127,4 @@ std::string Vec2d::DebugString() const {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

@@ -20,8 +20,8 @@
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(Vec2dTest, NomralCases) {
@@ -100,5 +100,4 @@ TEST(Vec2dTest, selfrotate) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

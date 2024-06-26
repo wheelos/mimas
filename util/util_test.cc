@@ -22,7 +22,6 @@
 
 #include "util/testdata/simple.pb.h"
 
-
 namespace mimas {
 namespace util {
 

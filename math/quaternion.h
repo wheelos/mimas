@@ -38,8 +38,7 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 /*
@@ -116,5 +115,4 @@ inline Eigen::Vector3d InverseQuaternionRotate(const Quaternion &orientation,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

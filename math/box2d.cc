@@ -26,8 +26,8 @@
 #include "math/math_utils.h"
 #include "math/polygon2d.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 namespace {
 
@@ -350,5 +350,4 @@ std::string Box2d::DebugString() const {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

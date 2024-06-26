@@ -19,8 +19,7 @@
 #include <cmath>
 #include <utility>
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 double Sqr(const double x) { return x * x; }
@@ -97,5 +96,4 @@ std::pair<double, double> Cartesian2Polar(double x, double y) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

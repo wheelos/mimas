@@ -18,7 +18,6 @@
 
 #include "google/protobuf/util/json_util.h"
 
-
 namespace mimas {
 namespace util {
 namespace {

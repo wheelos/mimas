@@ -28,8 +28,7 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 constexpr double kMathEpsilon = 1e-10;
@@ -131,5 +130,4 @@ class Vec2d {
 Vec2d operator*(const double ratio, const Vec2d &vec);
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

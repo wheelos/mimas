@@ -45,7 +45,6 @@
 namespace mimas {
 namespace util {
 
-
 using PointENU = apollo::common::PointENU;
 
 DEFINE_bool(multithread_run, false,

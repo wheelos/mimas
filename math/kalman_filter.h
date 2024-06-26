@@ -25,16 +25,15 @@
 #include <string>
 
 #include "Eigen/Dense"
+#include "math/matrix_operations.h"
 
 #include "cyber/common/log.h"
-#include "math/matrix_operations.h"
 
 /**
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 /**
@@ -293,5 +292,4 @@ inline std::string KalmanFilter<T, XN, ZN, UN>::DebugString() const {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

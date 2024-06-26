@@ -18,11 +18,11 @@
 
 #include <cmath>
 
-#include "Eigen/Geometry"
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+#include "Eigen/Geometry"
+
+namespace mimas {
 namespace math {
 
 namespace {
@@ -85,5 +85,4 @@ TEST(EulerAnglesZXYTest, IsValid) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

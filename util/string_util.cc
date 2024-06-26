@@ -21,7 +21,6 @@
 
 #include "absl/strings/str_cat.h"
 
-
 namespace mimas {
 namespace util {
 namespace {

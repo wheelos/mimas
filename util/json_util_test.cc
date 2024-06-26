@@ -23,7 +23,6 @@
 
 #include "common_msgs/basic_msgs/error_code.pb.h"
 
-
 namespace mimas {
 namespace util {
 

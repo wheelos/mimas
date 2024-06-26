@@ -25,11 +25,9 @@
 #include <vector>
 
 #include "glog/logging.h"
-
 #include "math/linear_interpolation.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 PathPoint PathMatcher::MatchToPath(const std::vector<PathPoint>& reference_line,
@@ -119,5 +117,4 @@ PathPoint PathMatcher::FindProjectionPoint(const PathPoint& p0,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

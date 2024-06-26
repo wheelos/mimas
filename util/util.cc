@@ -19,7 +19,6 @@
 #include <cmath>
 #include <vector>
 
-
 namespace mimas {
 namespace util {
 

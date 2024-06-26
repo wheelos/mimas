@@ -20,8 +20,8 @@
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(QuaternionTest, QuaternionToHeading) {
@@ -77,5 +77,4 @@ TEST(QuaternionTest, InverseQuaternionRotate) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

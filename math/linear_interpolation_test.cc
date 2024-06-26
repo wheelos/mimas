@@ -18,8 +18,8 @@
 #include "Eigen/Dense"
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(LinearInterpolationTest, LerpOneDim) {
@@ -73,5 +73,4 @@ TEST(LinearInterpolationTest, SlerpCaseTwo) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

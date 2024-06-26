@@ -20,8 +20,8 @@
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(LineSegment2dTest, Accessors) {
@@ -117,5 +117,4 @@ TEST(LineSegment2dTest, IsPointIn) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

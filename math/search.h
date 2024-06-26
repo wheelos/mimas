@@ -27,8 +27,8 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 /**
@@ -46,5 +46,4 @@ double GoldenSectionSearch(const std::function<double(double)> &func,
                            const double tol = 1e-6);
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

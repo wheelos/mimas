@@ -24,8 +24,7 @@
 
 #include "math/vec2d.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 // Notations:
@@ -101,5 +100,4 @@ class CartesianFrenetConverter {
 };
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

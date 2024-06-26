@@ -25,8 +25,7 @@
 
 #include "common_msgs/basic_msgs/pnc_point.pb.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 class PathMatcher {
@@ -49,5 +48,4 @@ class PathMatcher {
 };
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

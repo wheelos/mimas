@@ -18,8 +18,7 @@
 
 #include <cmath>
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 double GoldenSectionSearch(const std::function<double(double)> &func,
@@ -48,5 +47,4 @@ double GoldenSectionSearch(const std::function<double(double)> &func,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

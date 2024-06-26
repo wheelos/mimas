@@ -22,7 +22,6 @@
 
 #include "math/vec2d.h"
 
-
 namespace mimas {
 namespace util {
 

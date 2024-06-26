@@ -37,7 +37,6 @@ std::string func_name_simplified(const std::string& str) {
 
 using apollo::cyber::Time;
 
-
 namespace mimas {
 namespace util {
 

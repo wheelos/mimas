@@ -16,8 +16,7 @@
 
 #include "math/mpc_osqp.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 MpcOsqp::MpcOsqp(const Eigen::MatrixXd &matrix_a,
                  const Eigen::MatrixXd &matrix_b,
@@ -340,5 +339,4 @@ bool MpcOsqp::Solve(std::vector<double> *control_cmd) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

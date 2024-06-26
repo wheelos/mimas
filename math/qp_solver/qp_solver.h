@@ -28,8 +28,7 @@
 #include "Eigen/Core"
 #include "Eigen/LU"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 class QpSolver {
@@ -67,5 +66,4 @@ class QpSolver {
 };
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

@@ -30,8 +30,8 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 double IntegrateBySimpson(const std::vector<double>& funv_vec, const double dx,
@@ -288,5 +288,4 @@ double IntegrateByGaussLegendre(const std::function<double(double)>& func,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

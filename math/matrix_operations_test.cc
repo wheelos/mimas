@@ -18,8 +18,8 @@
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(PseudoInverseTest, PseudoInverseI) {
@@ -381,5 +381,4 @@ TEST(DENSE_TO_CSC_MATRIX, patterned_dense_to_csc_matrix_test) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

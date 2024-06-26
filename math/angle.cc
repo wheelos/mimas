@@ -18,8 +18,8 @@
 
 #include "math/sin_table.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 float sin(Angle16 a) {
@@ -62,5 +62,4 @@ float tan(Angle8 a) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

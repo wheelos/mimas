@@ -18,7 +18,6 @@
 
 #include "gtest/gtest.h"
 
-
 namespace mimas {
 namespace util {
 

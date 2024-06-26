@@ -34,8 +34,7 @@
  * @namespace apollo::common::math
  * @brief The math namespace deals with a number of useful mathematical objects.
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 /**
@@ -159,5 +158,4 @@ void DenseToCSCMatrix(const Eigen::Matrix<T, M, N> &dense_matrix,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

@@ -22,7 +22,6 @@
 #include <utility>
 #include <vector>
 
-
 namespace mimas {
 namespace util {
 

@@ -32,8 +32,7 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 /**
@@ -337,5 +336,4 @@ class Polygon2d {
 };
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

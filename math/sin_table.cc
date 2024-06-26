@@ -18,8 +18,8 @@
 
 #include "math/sin_table.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 const float SIN_TABLE[16385] = {
@@ -3302,5 +3302,4 @@ const float SIN_TABLE[16385] = {
     0.999999926f, 0.999999959f, 0.999999982f, 0.999999995f, 1.000000000f};
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

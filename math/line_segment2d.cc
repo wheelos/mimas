@@ -25,8 +25,8 @@
 
 #include "math/math_utils.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 namespace {
 
@@ -225,5 +225,4 @@ std::string LineSegment2d::DebugString() const {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

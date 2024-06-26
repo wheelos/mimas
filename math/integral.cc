@@ -20,8 +20,7 @@
 
 #include "cyber/common/log.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 double IntegrateBySimpson(const std::vector<double>& func, const double dx,
@@ -49,5 +48,4 @@ double IntegrateByTrapezoidal(const std::vector<double>& func, const double dx,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

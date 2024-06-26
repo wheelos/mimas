@@ -20,8 +20,7 @@
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 namespace {
@@ -48,5 +47,4 @@ TEST(IntegralTest, Integration) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

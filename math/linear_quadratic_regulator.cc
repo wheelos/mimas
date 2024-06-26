@@ -21,8 +21,8 @@
 #include "cyber/common/log.h"
 #include "math/linear_quadratic_regulator.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 using Matrix = Eigen::MatrixXd;
@@ -77,5 +77,4 @@ void SolveLQRProblem(const Matrix &A, const Matrix &B, const Matrix &Q,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

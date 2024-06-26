@@ -25,8 +25,7 @@
 #include "math/line_segment2d.h"
 #include "math/math_utils.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 namespace {
@@ -698,5 +697,4 @@ TEST(Polygon2dTest, Expand) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

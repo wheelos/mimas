@@ -20,12 +20,11 @@
 #include <cmath>
 
 #include "absl/strings/str_cat.h"
-#include "cyber/common/log.h"
-
 #include "math/math_utils.h"
 
-namespace apollo {
-namespace common {
+#include "cyber/common/log.h"
+
+namespace mimas {
 namespace math {
 
 AABox2d::AABox2d(const Vec2d &center, const double length, const double width)
@@ -151,5 +150,4 @@ std::string AABox2d::DebugString() const {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

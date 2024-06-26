@@ -21,8 +21,8 @@
 #include "cyber/common/log.h"
 #include "math/math_utils.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 void CartesianFrenetConverter::cartesian_to_frenet(
@@ -185,4 +185,3 @@ double CartesianFrenetConverter::CalculateSecondOrderLateralDerivative(
 
 }  // namespace math
 }  // namespace common
-}  // namespace apollo

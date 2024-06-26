@@ -29,8 +29,7 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 /**
@@ -277,5 +276,4 @@ float cos(Angle8 a);
 float tan(Angle8 a);
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

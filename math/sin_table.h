@@ -25,8 +25,8 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 //! Used by Angle class to speed-up computation of trigonometric functions.
@@ -34,5 +34,4 @@ namespace math {
 extern const float SIN_TABLE[SIN_TABLE_SIZE];
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

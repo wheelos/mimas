@@ -31,8 +31,7 @@
  * @namespace apollo::common::math
  * @brief The math namespace deals with a number of useful mathematical objects.
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 bool ContinuousToDiscrete(const Eigen::MatrixXd &m_a,
@@ -75,5 +74,4 @@ bool ContinuousToDiscrete(const Eigen::MatrixXd &m_a,
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

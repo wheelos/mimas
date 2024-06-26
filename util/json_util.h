@@ -24,7 +24,6 @@
 
 #include "cyber/common/log.h"
 
-
 namespace mimas {
 namespace util {
 

@@ -21,8 +21,8 @@
 #include "gtest/gtest.h"
 #include "math/sin_table.h"
 
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 TEST(Angle, SIN_TABLE) {
@@ -64,5 +64,4 @@ TEST(Angle, operators) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

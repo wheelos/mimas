@@ -22,11 +22,11 @@
 #include <utility>
 #include <vector>
 
-#include "cyber/common/log.h"
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+#include "cyber/common/log.h"
+
+namespace mimas {
 namespace math {
 
 TEST(MPCOSQPSolverTest, ComputationTimeTest) {
@@ -175,5 +175,4 @@ TEST(MPCOSQPSolverTest, NullMatrix) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

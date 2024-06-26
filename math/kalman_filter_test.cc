@@ -18,8 +18,7 @@
 
 #include "gtest/gtest.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 class KalmanFilterTest : public ::testing::Test {
@@ -105,5 +104,4 @@ TEST_F(KalmanFilterTest, SyntheticTrackingTest) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

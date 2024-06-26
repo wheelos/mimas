@@ -30,8 +30,7 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 /**
@@ -82,5 +81,4 @@ TrajectoryPoint InterpolateUsingLinearApproximation(const TrajectoryPoint &tp0,
                                                     const double t);
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

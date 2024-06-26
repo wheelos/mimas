@@ -27,8 +27,7 @@
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 /**
@@ -65,5 +64,4 @@ void SolveLQRProblem(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B,
                      Eigen::MatrixXd *ptr_K);
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

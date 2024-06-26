@@ -20,8 +20,7 @@
 
 #include "osqp/osqp.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 TEST(MathUtilsTest, CrossProd) {
@@ -214,5 +213,4 @@ TEST(MathUtilsTest, QPSTTest) {
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

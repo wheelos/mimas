@@ -26,15 +26,14 @@
 #include <cmath>
 
 #include "Eigen/Geometry"
-
 #include "math/math_utils.h"
 
 /**
  * @namespace apollo::common::math
  * @brief apollo::common::math
  */
-namespace apollo {
-namespace common {
+
+namespace mimas {
 namespace math {
 
 /**
@@ -185,5 +184,4 @@ using EulerAnglesZXYf = EulerAnglesZXY<float>;
 using EulerAnglesZXYd = EulerAnglesZXY<double>;
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas

@@ -18,7 +18,6 @@
 
 #include "cyber/common/macros.h"
 
-
 namespace mimas {
 namespace util {
 

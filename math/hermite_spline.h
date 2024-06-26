@@ -25,8 +25,7 @@
 
 #include "cyber/common/log.h"
 
-namespace apollo {
-namespace common {
+namespace mimas {
 namespace math {
 
 // Hermite spline implementation that works for 1d and 2d space interpolation.
@@ -96,7 +95,9 @@ inline T HermiteSpline<T, N>::Evaluate(const std::uint32_t order,
       case 3: {
         return 12.0 * p0 + 6.0 * v0 - 12.0 * p1 + 6.0 * v1;
       }
-      default: { break; }
+      default: {
+        break;
+      }
     }
   } else {
     CHECK_EQ(5, N);
@@ -194,12 +195,13 @@ inline T HermiteSpline<T, N>::Evaluate(const std::uint32_t order,
         return d5h0 * p0 + d5h1 * v0 + d5h2 * a0 + d5h3 * p1 + d5h4 * v1 +
                d5h5 * a1;
       }
-      default: { break; }
+      default: {
+        break;
+      }
     }
   }
   return T();
 }
 
 }  // namespace math
-}  // namespace common
-}  // namespace apollo
+}  // namespace mimas
