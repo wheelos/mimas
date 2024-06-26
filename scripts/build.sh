@@ -6,4 +6,4 @@ set -e
 
 LOCAL_CACHE="/tmp/cache/"
 
-bazel build //event_component/... --distdir="$LOCAL_CACHE"
+bazel build //... --distdir="$LOCAL_CACHE"

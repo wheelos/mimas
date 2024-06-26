@@ -1,9 +1,15 @@
-workspace(name = "core")
+workspace(name = "mimas")
 
-load("//:bazel/core_deps.bzl", "core_deps")
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
-core_deps()
+git_repository(
+    name = "core",
+    remote = "https://github.com/wheelos/core.git",
+    branch = "main",
+)
 
-load("//bazel/third_party/py:python_configure.bzl", "python_configure")
-
-python_configure(name = "local_config_python")
+git_repository(
+    name = "common_msgs",
+    remote = "https://github.com/wheelos/common_msgs.git",
+    branch = "main",
+)
