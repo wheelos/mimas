@@ -23,8 +23,9 @@
 
 #include <cmath>
 
-#include "cyber/common/log.h"
 #include "common_msgs/basic_msgs/pnc_point.pb.h"
+
+#include "cyber/common/log.h"
 
 /**
  * @namespace apollo::common::math
@@ -32,6 +33,8 @@
  */
 namespace mimas {
 namespace math {
+
+using PathPoint = apollo::common::PathPoint;
 
 /**
  * @brief Linear interpolation between two points of type T.

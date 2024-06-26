@@ -30,6 +30,8 @@ namespace math {
 
 class PathMatcher {
  public:
+  using PathPoint = apollo::common::PathPoint;
+
   PathMatcher() = delete;
 
   static PathPoint MatchToPath(const std::vector<PathPoint>& reference_line,

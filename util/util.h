@@ -46,6 +46,7 @@ namespace mimas {
 namespace util {
 
 using PointENU = apollo::common::PointENU;
+using PathPoint = apollo::common::PathPoint;
 
 DEFINE_bool(multithread_run, false,
             "multi-thread run flag mainly used by simulation");

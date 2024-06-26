@@ -27,6 +27,7 @@ namespace util {
 class PointFactory {
  public:
   using PointENU = apollo::common::PointENU;
+  using PathPoint = apollo::common::PathPoint;
 
  public:
   template <typename XY>
