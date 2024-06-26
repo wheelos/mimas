@@ -9,8 +9,7 @@ cc_library(
     deps = [
         "@wheel_core//cyber/common:log",
         "@wheel_core//cyber/common:types",
-        "//math",
-        "//math:geometry",
+        "//math:vec2d",
         "@wheel_common_msgs//common_msgs/basic_msgs:geometry_cc_proto",
         "@wheel_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
         "@com_github_gflags_gflags//:gflags",

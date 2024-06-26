@@ -23,7 +23,7 @@
 #include <vector>
 
 #include "Eigen/Eigen"
-#include "osqp/osqp.h"
+#include "include/osqp.h"
 
 #include "cyber/common/log.h"
 

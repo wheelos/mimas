@@ -65,7 +65,6 @@ cc_library(
         "@wheel_core//cyber/common:log",
         "//util:string_util",
         "@com_google_absl//absl/strings",
-        "@osqp",
     ],
 )
 
@@ -255,6 +254,7 @@ cc_test(
     deps = [
         ":geometry",
         "@com_google_googletest//:gtest_main",
+        "@osqp",
     ],
 )
 
