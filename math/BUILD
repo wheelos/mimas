@@ -15,7 +15,6 @@ cc_library(
         ":kalman_filter",
         ":linear_interpolation",
         ":lqr",
-        ":mpc_osqp",
         ":quaternion",
         ":search",
         ":sin_table",
@@ -158,17 +157,6 @@ cc_library(
     ],
 )
 
-cc_library(
-    name = "mpc_osqp",
-    srcs = ["mpc_osqp.cc"],
-    hdrs = ["mpc_osqp.h"],
-    deps = [
-        "@wheel_core//cyber/common:log",
-        "@eigen",
-        "@osqp",
-    ],
-)
-
 cc_test(
     name = "angle_test",
     size = "small",
@@ -233,17 +221,6 @@ cc_library(
     hdrs = ["hermite_spline.h"],
     deps = [
         "@wheel_core//cyber/common:log",
-    ],
-)
-
-cc_test(
-    name = "mpc_osqp_test",
-    size = "small",
-    srcs = ["mpc_osqp_test.cc"],
-    deps = [
-        ":mpc_osqp",
-        "@wheel_core//cyber/common:log",
-        "@com_google_googletest//:gtest_main",
     ],
 )
 

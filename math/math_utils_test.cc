@@ -122,94 +122,90 @@ TEST(MathUtilsTest, AlmostEqualTest) {
 }
 
 TEST(MathUtilsTest, QPSTTest) {
-  // Load problem data
-  c_float P_x[4] = {
-      4.00000000000000000000,
-      1.00000000000000000000,
-      1.00000000000000000000,
-      2.00000000000000000000,
+  /* Load problem data */
+  OSQPFloat P_x[3] = {
+      4.0,
+      1.0,
+      2.0,
   };
-  c_int P_nnz = 4;
-  c_int P_i[4] = {
+  OSQPInt P_nnz = 3;
+  OSQPInt P_i[3] = {
       0,
-      1,
       0,
       1,
   };
-  c_int P_p[3] = {
+  OSQPInt P_p[3] = {
+      0,
+      1,
+      3,
+  };
+  OSQPFloat q[2] = {
+      1.0,
+      1.0,
+  };
+  OSQPFloat A_x[4] = {
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+  };
+  OSQPInt A_nnz = 4;
+  OSQPInt A_i[4] = {
+      0,
+      1,
+      0,
+      2,
+  };
+  OSQPInt A_p[3] = {
       0,
       2,
       4,
   };
-  c_float q[2] = {
-      1.00000000000000000000,
-      1.00000000000000000000,
+  OSQPFloat l[3] = {
+      1.0,
+      0.0,
+      0.0,
   };
-  c_float A_x[4] = {
-      1.00000000000000000000,
-      1.00000000000000000000,
-      1.00000000000000000000,
-      1.00000000000000000000,
+  OSQPFloat u[3] = {
+      1.0,
+      0.7,
+      0.7,
   };
-  c_int A_nnz = 4;
-  c_int A_i[4] = {
-      0,
-      1,
-      0,
-      2,
-  };
-  c_int A_p[3] = {
-      0,
-      2,
-      4,
-  };
-  c_float l[3] = {
-      1.00000000000000000000,
-      0.00000000000000000000,
-      0.00000000000000000000,
-  };
-  c_float u[3] = {
-      1.00000000000000000000,
-      0.69999999999999995559,
-      0.69999999999999995559,
-  };
-  c_int n = 2;
-  c_int m = 3;
+  OSQPInt n = 2;
+  OSQPInt m = 3;
+
+  /* Exitflag */
+  OSQPInt exitflag = 0;
 
   // Problem settings
-  OSQPSettings *settings =
-      reinterpret_cast<OSQPSettings *>(c_malloc(sizeof(OSQPSettings)));
+  OSQPSolver *solver;
+  OSQPSettings *settings;
+  OSQPCscMatrix *P = malloc(sizeof(OSQPCscMatrix));
+  OSQPCscMatrix *A = malloc(sizeof(OSQPCscMatrix));
 
-  // Structures
-  OSQPWorkspace *work = NULL;  // Workspace
-  OSQPData *data;              // OSQPData
+  /* Populate matrices */
+  csc_set_data(A, m, n, A_nnz, A_x, A_i, A_p);
+  csc_set_data(P, n, n, P_nnz, P_x, P_i, P_p);
 
-  // Populate data
-  data = reinterpret_cast<OSQPData *>(c_malloc(sizeof(OSQPData)));
-  data->n = n;
-  data->m = m;
-  data->P = csc_matrix(data->n, data->n, P_nnz, P_x, P_i, P_p);
-  data->q = q;
-  data->A = csc_matrix(data->m, data->n, A_nnz, A_x, A_i, A_p);
-  data->l = l;
-  data->u = u;
+  settings = reinterpret_cast<OSQPSettings *>(c_malloc(sizeof(OSQPSettings)));
+  if (settings) {
+    osqp_set_default_settings(settings);
+    settings->alpha = 1.0;
+  }
 
-  // Define Solver settings as default
-  osqp_set_default_settings(settings);
+  /* Setup solver */
+  exitflag = osqp_setup(&solver, P, q, A, l, u, m, n, settings);
 
-  // Setup workspace
-  // work = osqp_setup(data, settings);
-  osqp_setup(&work, data, settings);
+  /* Solve problem */
+  if (!exitflag) {
+    exitflag = osqp_solve(solver);
+  }
 
-  // Solve Problem
-  osqp_solve(work);
-
-  // Clean workspace
-  osqp_cleanup(work);
-  c_free(data->A);
-  c_free(data->P);
-  c_free(data);
-  c_free(settings);
+  /* Cleanup */
+  osqp_cleanup(solver);
+  if (A) free(A);
+  if (P) free(P);
+  if (settings) free(settings);
 }
 
 }  // namespace math
