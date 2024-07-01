@@ -231,7 +231,6 @@ cc_test(
     deps = [
         ":geometry",
         "@com_google_googletest//:gtest_main",
-        "@osqp",
     ],
 )
 
