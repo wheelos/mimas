@@ -10,8 +10,8 @@ cc_library(
         "@wheel_core//cyber/common:log",
         "@wheel_core//cyber/common:types",
         "//math:vec2d",
-        "@wheel_common_msgs//common_msgs/basic_msgs:geometry_cc_proto",
-        "@wheel_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
+        "@wheelos_common_msgs//common_msgs/basic_msgs:geometry_cc_proto",
+        "@wheelos_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
         "@com_github_gflags_gflags//:gflags",
     ],
 )
@@ -32,7 +32,7 @@ cc_library(
     hdrs = ["point_factory.h"],
     deps = [
         "//math:geometry",
-        "@wheel_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
+        "@wheelos_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
     ],
 )
 
@@ -192,7 +192,7 @@ cc_test(
     srcs = ["json_util_test.cc"],
     deps = [
         ":json_util",
-        "@wheel_common_msgs//common_msgs/basic_msgs:error_code_cc_proto",
+        "@wheelos_common_msgs//common_msgs/basic_msgs:error_code_cc_proto",
         "@com_google_googletest//:gtest_main",
     ],
 )

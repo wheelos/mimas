@@ -97,7 +97,7 @@ cc_library(
     deps = [
         ":euler_angles_zxy",
         ":geometry",
-        "@wheel_common_msgs//common_msgs/basic_msgs:geometry_cc_proto",
+        "@wheelos_common_msgs//common_msgs/basic_msgs:geometry_cc_proto",
         "@eigen",
     ],
 )
@@ -153,7 +153,7 @@ cc_library(
     hdrs = ["path_matcher.h"],
     deps = [
         ":linear_interpolation",
-        "@wheel_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
+        "@wheelos_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
     ],
 )
 
@@ -182,7 +182,7 @@ cc_library(
     hdrs = ["linear_interpolation.h"],
     deps = [
         ":geometry",
-        "@wheel_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
+        "@wheelos_common_msgs//common_msgs/basic_msgs:pnc_point_cc_proto",
     ],
 )
 
